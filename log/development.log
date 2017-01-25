@@ -1,0 +1,389 @@
+Started GET "/" for 127.0.0.1 at 2016-12-29 18:00:17 -0430
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/oscar/.rvm/gems/ruby-2.3.3/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/oscar/.rvm/gems/ruby-2.3.3/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.5ms)
+Completed 200 OK in 20ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (96.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (118.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGeneros (20161229223154)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161229223154"]]
+  [1m[35m (116.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-12-29 22:33:10 UTC], ["updated_at", 2016-12-29 22:33:10 UTC]]
+  [1m[35m (139.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (99.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (106.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGeneros (20161229223154)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161229223154"]]
+  [1m[35m (108.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-12-29 22:36:38 UTC], ["updated_at", 2016-12-29 22:36:38 UTC]]
+  [1m[35m (110.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (116.8ms)[0m  [1m[35mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (141.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (111.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20161229223154')[0m
+  [1m[35m (118.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-12-29 22:38:14 UTC], ["updated_at", 2016-12-29 22:38:14 UTC]]
+  [1m[35m (111.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (119.6ms)[0m  [1m[35mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (118.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (113.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20161229223154')[0m
+  [1m[35m (129.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-12-29 22:38:15 UTC], ["updated_at", 2016-12-29 22:38:15 UTC]]
+  [1m[35m (114.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGeneros (20161229223154)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  [1m[35mDROP TABLE "generos"[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20161229223154"]]
+  [1m[35m (113.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGeneros (20161229223154)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161229223154"]]
+  [1m[35m (146.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateArtista (20161229224017)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "artistas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161229224017"]]
+  [1m[35m (123.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsuarios (20161229224111)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "login" varchar(255) NOT NULL, "clave" varchar(255) NOT NULL, "fecha_nacimiento" date NOT NULL, "sexo" integer NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161229224111"]]
+  [1m[35m (116.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAlbums (20161229224320)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "fecha_publicacion" date NOT NULL, "genero_id" integer NOT NULL, "artista_id" integer NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161229224320"]]
+  [1m[35m (107.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAlbums (20161229224320)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.5ms)[0m  [1m[35mDROP TABLE "albums"[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20161229224320"]]
+  [1m[35m (132.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAlbums (20161229224320)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "fecha_publicacion" date NOT NULL, "genero_id" integer NOT NULL, "artista_id" integer NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161229224320"]]
+  [1m[35m (127.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCancions (20161229224813)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "cancions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "duracion" float NOT NULL, "album_id" integer NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161229224813"]]
+  [1m[35m (142.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCancions (20161229224813)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.2ms)[0m  [1m[35mDROP TABLE "cancions"[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20161229224813"]]
+  [1m[35m (118.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCancions (20161229224813)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "cancions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "duracion" float NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAlbums (20161229224320)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.8ms)[0m  [1m[35mDROP TABLE "albums"[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20161229224320"]]
+  [1m[35m (121.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAlbums (20161229224320)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "fecha_publicacion" date NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_albums_on_genero_id" ON "albums" ("genero_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsuarios (20161229224111)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  [1m[35mDROP TABLE "usuarios"[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20161229224111"]]
+  [1m[35m (109.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsuarios (20161229224111)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "login" varchar(255) NOT NULL, "clave" varchar(255) NOT NULL, "fecha_nacimiento" date NOT NULL, "sexo" integer NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161229224111"]]
+  [1m[35m (127.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateAlbums (20161229224320)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "fecha_publicacion" date NOT NULL, "genero_id" integer NOT NULL, "artista_id" integer NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161229224320"]]
+  [1m[35m (133.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCancions (20161229224813)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "cancions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255) NOT NULL, "duracion" float NOT NULL, "album_id" integer NOT NULL, "estatus" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161229224813"]]
+  [1m[35m (107.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCalificacionAlbums (20161229225829)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "calificacion_albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "album_id" integer NOT NULL, "usuario_id" integer NOT NULL, "calificacion" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161229225829"]]
+  [1m[35m (127.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCalificacionCancions (20161229225837)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "calificacion_cancions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "cancion_id" integer NOT NULL, "usuario_id" integer NOT NULL, "calificacion" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161229225837"]]
+  [1m[35m (147.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "generos" ("nombre", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["nombre", "Rock"], ["estatus", 1], ["created_at", 2016-12-29 23:50:54 UTC], ["updated_at", 2016-12-29 23:50:54 UTC]]
+  [1m[35m (107.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "generos" ("nombre", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["nombre", "Trance"], ["estatus", 1], ["created_at", 2016-12-29 23:53:38 UTC], ["updated_at", 2016-12-29 23:53:38 UTC]]
+  [1m[35m (121.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "generos" ("estatus", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["estatus", 0], ["created_at", 2016-12-29 23:54:43 UTC], ["updated_at", 2016-12-29 23:54:43 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "generos" ("nombre", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["nombre", "sa"], ["estatus", 0], ["created_at", 2016-12-29 23:54:43 UTC], ["updated_at", 2016-12-29 23:54:43 UTC]]
+  [1m[35m (105.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mGenero Load (0.5ms)[0m  [1m[34mSELECT "generos".* FROM "generos"[0m
+  [1m[36mGenero Load (0.5ms)[0m  [1m[34mSELECT  "generos".* FROM "generos" WHERE "generos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "generos" SET "nombre" = ?, "updated_at" = ? WHERE "generos"."id" = ?[0m  [["nombre", "Pop"], ["updated_at", 2016-12-29 23:56:29 UTC], ["id", 3]]
+  [1m[35m (121.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mGenero Load (0.4ms)[0m  [1m[34mSELECT "generos".* FROM "generos"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "artistas" ("nombre", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["nombre", "Tool"], ["estatus", 1], ["created_at", 2016-12-29 23:58:37 UTC], ["updated_at", 2016-12-29 23:58:37 UTC]]
+  [1m[35m (113.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "artistas" ("nombre", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["nombre", "Avicii"], ["estatus", 1], ["created_at", 2016-12-29 23:58:39 UTC], ["updated_at", 2016-12-29 23:58:39 UTC]]
+  [1m[35m (110.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "artistas" ("nombre", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["nombre", "Adele"], ["estatus", 1], ["created_at", 2016-12-29 23:58:41 UTC], ["updated_at", 2016-12-29 23:58:41 UTC]]
+  [1m[35m (111.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArtista Load (0.6ms)[0m  [1m[34mSELECT "artistas".* FROM "artistas"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "usuarios" ("nombre", "login", "clave", "fecha_nacimiento", "sexo", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Oscar"], ["login", "oscar163"], ["clave", "12345"], ["fecha_nacimiento", Tue, 01 Jun 1993], ["sexo", 1], ["estatus", 1], ["created_at", 2016-12-30 00:03:11 UTC], ["updated_at", 2016-12-30 00:03:11 UTC]]
+  [1m[35m (126.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArtista Load (0.6ms)[0m  [1m[34mSELECT  "artistas".* FROM "artistas" WHERE "artistas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "albums" ("nombre", "fecha_publicacion", "genero_id", "artista_id", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Lateralus"], ["fecha_publicacion", Tue, 15 May 2001], ["genero_id", 1], ["artista_id", 1], ["estatus", 1], ["created_at", 2016-12-30 00:10:04 UTC], ["updated_at", 2016-12-30 00:10:04 UTC]]
+  [1m[35m (112.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCancion Load (0.1ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions" WHERE "cancions"."album_id" = ?[0m  [["album_id", 1]]
+DEPRECATION WARNING: Passing an argument to force an association to reload is now deprecated and will be removed in Rails 5.1. Please call `reload` on the result collection proxy instead. (called from irb_binding at (irb):4)
+  [1m[36mCancion Load (0.3ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions" WHERE "cancions"."album_id" = ?[0m  [["album_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "cancions" ("nombre", "duracion", "album_id", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Parabola"], ["duracion", 603.0], ["album_id", 1], ["estatus", 1], ["created_at", 2016-12-30 00:27:01 UTC], ["updated_at", 2016-12-30 00:27:01 UTC]]
+  [1m[35m (106.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "cancions" ("nombre", "duracion", "album_id", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Schism"], ["duracion", 6.47], ["album_id", 1], ["estatus", 1], ["created_at", 2016-12-30 00:27:59 UTC], ["updated_at", 2016-12-30 00:27:59 UTC]]
+  [1m[35m (134.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCancion Load (0.4ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions" WHERE "cancions"."album_id" = ?[0m  [["album_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "cancions" ("nombre", "duracion", "album_id", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Lateralus"], ["duracion", 9.24], ["album_id", 1], ["estatus", 1], ["created_at", 2016-12-30 00:29:13 UTC], ["updated_at", 2016-12-30 00:29:13 UTC]]
+  [1m[35m (105.3ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: Passing an argument to force an association to reload is now deprecated and will be removed in Rails 5.1. Please call `reload` on the result collection proxy instead. (called from irb_binding at (irb):18)
+  [1m[36mCancion Load (0.4ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions" WHERE "cancions"."album_id" = ?[0m  [["album_id", 1]]
+DEPRECATION WARNING: Passing an argument to force an association to reload is now deprecated and will be removed in Rails 5.1. Please call `reload` on the result collection proxy instead. (called from irb_binding at (irb):19)
+  [1m[36mCancion Load (0.3ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions" WHERE "cancions"."album_id" = ?[0m  [["album_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "cancions" ("nombre", "duracion", "album_id", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Triad"], ["duracion", 8.46], ["album_id", 1], ["estatus", 1], ["created_at", 2016-12-30 00:31:52 UTC], ["updated_at", 2016-12-30 00:31:52 UTC]]
+  [1m[35m (110.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCancion Load (0.6ms)[0m  [1m[34mSELECT  "cancions".* FROM "cancions" WHERE "cancions"."nombre" = ? LIMIT ?[0m  [["nombre", "Triad"], ["LIMIT", 1]]
+  [1m[36mCancion Load (0.3ms)[0m  [1m[34mSELECT  "cancions".* FROM "cancions" WHERE "cancions"."nombre" = ? LIMIT ?[0m  [["nombre", "Lateralus"], ["LIMIT", 1]]
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGenero Load (0.3ms)[0m  [1m[34mSELECT  "generos".* FROM "generos" WHERE "generos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCancion Load (0.6ms)[0m  [1m[34mSELECT  "cancions".* FROM "cancions" WHERE "cancions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "cancions" SET "duracion" = ?, "updated_at" = ? WHERE "cancions"."id" = ?[0m  [["duracion", 6.03], ["updated_at", 2016-12-30 00:33:50 UTC], ["id", 1]]
+  [1m[35m (111.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArtista Load (0.7ms)[0m  [1m[34mSELECT  "artistas".* FROM "artistas" WHERE "artistas"."nombre" = ? LIMIT ?[0m  [["nombre", "Avicii"], ["LIMIT", 1]]
+  [1m[36mGenero Load (0.2ms)[0m  [1m[34mSELECT  "generos".* FROM "generos" WHERE "generos"."nombre" = ? LIMIT ?[0m  [["nombre", "Trance"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("nombre", "fecha_publicacion", "genero_id", "artista_id", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Stories"], ["fecha_publicacion", Fri, 02 Oct 2015], ["genero_id", 2], ["artista_id", 2], ["estatus", 1], ["created_at", 2016-12-30 00:37:27 UTC], ["updated_at", 2016-12-30 00:37:27 UTC]]
+  [1m[35m (120.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."artista_id" = ?[0m  [["artista_id", 2]]
+  [1m[36mAlbum Load (0.7ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."nombre" = ? LIMIT ?[0m  [["nombre", "Stories"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "cancions" ("nombre", "duracion", "album_id", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "The Nights"], ["duracion", 2.56], ["album_id", 2], ["estatus", 1], ["created_at", 2016-12-30 00:38:59 UTC], ["updated_at", 2016-12-30 00:38:59 UTC]]
+  [1m[35m (126.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCancion Load (0.2ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions" WHERE "cancions"."album_id" = ?[0m  [["album_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "cancions" ("nombre", "duracion", "album_id", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Waiting for Love"], ["duracion", 3.5], ["album_id", 2], ["estatus", 1], ["created_at", 2016-12-30 00:39:24 UTC], ["updated_at", 2016-12-30 00:39:24 UTC]]
+  [1m[35m (118.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArtista Load (0.3ms)[0m  [1m[34mSELECT  "artistas".* FROM "artistas" WHERE "artistas"."nombre" = ? LIMIT ?[0m  [["nombre", "Adele"], ["LIMIT", 1]]
+  [1m[36mGenero Load (0.1ms)[0m  [1m[34mSELECT  "generos".* FROM "generos" WHERE "generos"."nombre" = ? LIMIT ?[0m  [["nombre", "Pop"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("nombre", "fecha_publicacion", "genero_id", "artista_id", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "21"], ["fecha_publicacion", Mon, 24 Jan 2011], ["genero_id", 3], ["artista_id", 3], ["estatus", 1], ["created_at", 2016-12-30 00:41:51 UTC], ["updated_at", 2016-12-30 00:41:51 UTC]]
+  [1m[35m (119.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."artista_id" = ?[0m  [["artista_id", 3]]
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."nombre" = ? LIMIT ?[0m  [["nombre", "21"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "cancions" ("nombre", "duracion", "album_id", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Someone Like You"], ["duracion", 4.45], ["album_id", 3], ["estatus", 1], ["created_at", 2016-12-30 00:43:17 UTC], ["updated_at", 2016-12-30 00:43:17 UTC]]
+  [1m[35m (116.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCancion Load (0.1ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions" WHERE "cancions"."album_id" = ?[0m  [["album_id", 3]]
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."nombre" = ? LIMIT ?[0m  [["nombre", "21"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "cancions" ("nombre", "duracion", "album_id", "estatus", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Rolling in the Deep"], ["duracion", 3.48], ["album_id", 3], ["estatus", 1], ["created_at", 2016-12-30 00:43:34 UTC], ["updated_at", 2016-12-30 00:43:34 UTC]]
+  [1m[35m (95.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCancion Load (0.2ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions" WHERE "cancions"."album_id" = ?[0m  [["album_id", 3]]
+  [1m[36mCancion Load (0.6ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions"[0m
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."genero_id" = ?[0m  [["genero_id", 1]]
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."nombre" = ? LIMIT ?[0m  [["nombre", "Lateralus"], ["LIMIT", 1]]
+  [1m[36mCancion Load (0.3ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions" WHERE "cancions"."album_id" = ?[0m  [["album_id", 1]]
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."nombre" = ? LIMIT ?[0m  [["nombre", "Lateralus"], ["LIMIT", 1]]
+  [1m[36mCancion Load (0.3ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions" WHERE "cancions"."album_id" = ?[0m  [["album_id", 1]]
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."nombre" = ? LIMIT ?[0m  [["nombre", "Lateralus"], ["LIMIT", 1]]
+  [1m[36mCancion Load (0.5ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions" WHERE "cancions"."album_id" = 1[0m
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."nombre" = ? LIMIT ?[0m  [["nombre", "21"], ["LIMIT", 1]]
+  [1m[36mCancion Load (0.4ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions" WHERE "cancions"."album_id" = 3[0m
+  [1m[36mCancion Load (1.5ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions"[0m
+  [1m[36mCancion Load (0.4ms)[0m  [1m[34mSELECT "cancions".* FROM "cancions"[0m
+  [1m[36mArtista Load (0.5ms)[0m  [1m[34mSELECT "artistas".* FROM "artistas"[0m
+  [1m[36mArtista Load (0.3ms)[0m  [1m[34mSELECT "artistas".* FROM "artistas"[0m
+  [1m[36mGenero Load (0.2ms)[0m  [1m[34mSELECT  "generos".* FROM "generos" WHERE "generos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGenero Load (0.1ms)[0m  [1m[34mSELECT  "generos".* FROM "generos" WHERE "generos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGenero Load (0.1ms)[0m  [1m[34mSELECT  "generos".* FROM "generos" WHERE "generos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCancion Load (0.7ms)[0m  [1m[34mSELECT  "cancions".* FROM "cancions" WHERE "cancions"."nombre" = ? LIMIT ?[0m  [["nombre", "Lateralus"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "calificacion_cancions" ("cancion_id", "usuario_id", "calificacion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cancion_id", 3], ["usuario_id", 1], ["calificacion", 9], ["created_at", 2016-12-30 01:12:56 UTC], ["updated_at", 2016-12-30 01:12:56 UTC]]
+  [1m[35m (106.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCalificacionCancion Load (0.5ms)[0m  [1m[34mSELECT "calificacion_cancions".* FROM "calificacion_cancions" WHERE "calificacion_cancions"."usuario_id" = ?[0m  [["usuario_id", 1]]
+  [1m[36mCancion Load (0.4ms)[0m  [1m[34mSELECT  "cancions".* FROM "cancions" WHERE "cancions"."nombre" = ? LIMIT ?[0m  [["nombre", "The Nights"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "calificacion_cancions" ("cancion_id", "usuario_id", "calificacion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cancion_id", 5], ["usuario_id", 1], ["calificacion", 8], ["created_at", 2016-12-30 01:13:15 UTC], ["updated_at", 2016-12-30 01:13:15 UTC]]
+  [1m[35m (121.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCancion Load (0.4ms)[0m  [1m[34mSELECT  "cancions".* FROM "cancions" WHERE "cancions"."nombre" = ? LIMIT ?[0m  [["nombre", "Someone Like You"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "calificacion_cancions" ("cancion_id", "usuario_id", "calificacion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cancion_id", 7], ["usuario_id", 1], ["calificacion", 8], ["created_at", 2016-12-30 01:13:30 UTC], ["updated_at", 2016-12-30 01:13:30 UTC]]
+  [1m[35m (127.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."nombre" = ? LIMIT ?[0m  [["nombre", "Lateralus"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "calificacion_albums" ("album_id", "usuario_id", "calificacion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["album_id", 1], ["usuario_id", 1], ["calificacion", 9], ["created_at", 2016-12-30 01:14:14 UTC], ["updated_at", 2016-12-30 01:14:14 UTC]]
+  [1m[35m (117.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCalificacionAlbum Load (0.6ms)[0m  [1m[34mSELECT "calificacion_albums".* FROM "calificacion_albums" WHERE "calificacion_albums"."usuario_id" = ?[0m  [["usuario_id", 1]]
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."nombre" = ? LIMIT ?[0m  [["nombre", "Stories"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "calificacion_albums" ("album_id", "usuario_id", "calificacion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["album_id", 2], ["usuario_id", 1], ["calificacion", 7], ["created_at", 2016-12-30 01:14:27 UTC], ["updated_at", 2016-12-30 01:14:27 UTC]]
+  [1m[35m (108.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."nombre" = ? LIMIT ?[0m  [["nombre", "21"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "calificacion_albums" ("album_id", "usuario_id", "calificacion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["album_id", 3], ["usuario_id", 1], ["calificacion", 7], ["created_at", 2016-12-30 01:14:36 UTC], ["updated_at", 2016-12-30 01:14:36 UTC]]
+  [1m[35m (124.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCalificacionAlbum Load (0.6ms)[0m  [1m[34mSELECT "calificacion_albums".* FROM "calificacion_albums"[0m
+  [1m[36mCalificacionAlbum Load (0.3ms)[0m  [1m[34mSELECT "calificacion_albums".* FROM "calificacion_albums"[0m
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCalificacionAlbum Load (0.3ms)[0m  [1m[34mSELECT "calificacion_albums".* FROM "calificacion_albums"[0m
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCalificacionAlbum Load (0.3ms)[0m  [1m[34mSELECT "calificacion_albums".* FROM "calificacion_albums"[0m
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCalificacionAlbum Load (0.4ms)[0m  [1m[34mSELECT "calificacion_albums".* FROM "calificacion_albums"[0m
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCalificacionAlbum Load (0.3ms)[0m  [1m[34mSELECT "calificacion_albums".* FROM "calificacion_albums"[0m
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCalificacionAlbum Load (0.3ms)[0m  [1m[34mSELECT "calificacion_albums".* FROM "calificacion_albums"[0m
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCalificacionAlbum Load (0.3ms)[0m  [1m[34mSELECT "calificacion_albums".* FROM "calificacion_albums"[0m
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAlbum Load (0.1ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCalificacionCancion Load (0.6ms)[0m  [1m[34mSELECT "calificacion_cancions".* FROM "calificacion_cancions"[0m
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCancion Load (0.2ms)[0m  [1m[34mSELECT  "cancions".* FROM "cancions" WHERE "cancions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCancion Load (0.1ms)[0m  [1m[34mSELECT  "cancions".* FROM "cancions" WHERE "cancions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUsuario Load (0.1ms)[0m  [1m[34mSELECT  "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCancion Load (0.1ms)[0m  [1m[34mSELECT  "cancions".* FROM "cancions" WHERE "cancions"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2017-01-25 18:02:25 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/oscar/.rvm/gems/ruby-2.3.3/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/oscar/.rvm/gems/ruby-2.3.3/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.4ms)
+Completed 200 OK in 73ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
