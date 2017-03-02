@@ -4,4 +4,10 @@ class Album < ApplicationRecord
 	has_many :calificacion_albums
 	has_many :usuarios, through: :calificacion_albums
 	has_many :cancions
+
+	def contar
+		1..10.each do |numero|
+			puts numero
+		end
+	end
 end
