@@ -6,7 +6,7 @@ class Album < ApplicationRecord
 	has_many :cancions
 
 	def contar
-		1..10.each do |numero|
+		1..20.each do |numero|
 			puts numero
 		end
 	end
